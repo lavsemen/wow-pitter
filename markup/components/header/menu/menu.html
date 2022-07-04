@@ -1,0 +1,9 @@
+<div class="header-menu__list">
+    <nav class="header-menu__nav">
+        {{#each this}}
+            <div class="header-menu__item">
+                {{> uikit/links/markup text=name url=url}}
+            </div>
+        {{/each}}
+    </nav>
+</div>

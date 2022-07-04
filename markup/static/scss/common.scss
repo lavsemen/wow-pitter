@@ -1,0 +1,26 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+    font-family: $font-family-base;
+    color: $text-color-main;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+
+.page__wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+    padding-top: 60px;
+    overflow-x: hidden;
+}
+
+* html .page__wrapper {
+    height: 100%;
+}
+
+.page__buffer {
+    height: 50px;
+}

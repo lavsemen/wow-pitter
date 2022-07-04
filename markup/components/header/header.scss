@@ -1,0 +1,14 @@
+.header {
+    padding: 21px 0;
+    border-bottom: 1px solid rgba($black, .10);
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item {
+        height: 100%;
+    }
+
+
+}

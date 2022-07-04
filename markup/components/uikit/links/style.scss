@@ -1,0 +1,7 @@
+.link {
+    text-decoration: none;
+    color: $text-color-main;
+    @include baseHover() {
+        color: $main;
+    }
+}

@@ -1,0 +1,33 @@
+<div class="hero">
+    <div class="swiper-wrapper">
+       {{#each slides}}
+        <div class="swiper-slide">
+            <div class="hero__card">
+
+               <div class="hero__card-image">
+                    <img src="{{img}}" alt="">
+               </div>
+
+               <div class="hero__card-label">
+                 {{label}}
+               </div>
+               <div class="hero__card-content">
+                    <div class="hero__card-title">
+                        {{title}}
+                    </div>
+                    <div class="hero__card-desc">
+                        {{desc}}
+                    </div>
+                    <div class="hero__card-tags">
+                        {{#each tags}}
+                            <div class="hero__card-tag">
+                                {{this}}
+                            </div>
+                        {{/each}}
+                    </div>
+               </div>
+            </div>
+        </div>
+       {{/each}}
+    </div>
+</div>
