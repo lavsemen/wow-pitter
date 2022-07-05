@@ -25,9 +25,30 @@
                             </div>
                         {{/each}}
                     </div>
+                    <div class="hero__card-author">
+                        <div class="hero__card-author-avatar">
+                            <img src="{{author.img}}" alt="">
+                        </div>
+                        <div class="hero__card-author-content">
+                            <div class="hero__card-author-name">
+                                {{author.name}}
+                            </div>
+                            <div class="hero__card-author-role">
+                                {{author.role}}
+                            </div>
+                        </div>
+                        <div class="hero__card-author-action">
+                            {{>uikit/buttons/markup text="Забронировать"}}
+                        </div>
+                    </div>
                </div>
             </div>
         </div>
        {{/each}}
     </div>
+    <div class="swiper-button-prev">
+    </div>
+    <div class="swiper-button-next">
+    </div>
+    <div class="swiper-pagination"></div>
 </div>

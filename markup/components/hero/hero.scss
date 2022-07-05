@@ -1,5 +1,40 @@
 .hero {
+    position: relative;
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 62px;
+        height: 62px;
+        background: $white;
+        box-shadow: 0px 4px 35px 3px rgba(191, 191, 191, 0.17);
+        border-radius: 50%;
+        &::after {
+            transform: scale(0.5);
+            color: $black;
+        }
+    }
+    .swiper-pagination {
+        bottom: -40px;
+        &-bullet {
+            width: 17px;
+            height: 17px;
+            opacity: .1;
+            &-active {
+                opacity: 1;
+                background: $main;
+            }
+        }
+    }
+    .swiper-button-disabled {
+        opacity: 1;
+    }
+    .swiper-button-prev {
+        left: -31px;
+    }
+    .swiper-button-next {
+        right: -31px;
+    }
     &__card {
+        user-select: none;
         &::after {
             content: ' ';
             position: absolute;
@@ -14,13 +49,20 @@
         border-radius: 60px;
         position: relative;
         color: $white;
-        min-height: 600px;
-        padding: 220px 50px 50px;
+        height: 640px;
+        display: flex;
+        align-items: center;
+
+
+
+
+
         &-title {
             color: $white;
             font-weight: 400;
             font-family: $font-family-second;
             font-size: 74px;
+            line-height: 74px;
             & + * {
                 margin-top: 16px;
             }
@@ -37,7 +79,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
         }
 
         &-desc {
@@ -48,8 +89,10 @@
         }
 
         &-content {
-            position: relative;
             z-index: 4;
+            display: flex;
+            flex-direction: column;
+            padding: 0 50px 50px;
         }
         &-image {
             position: absolute;
@@ -67,6 +110,45 @@
         &-tags {
             display: flex;
             align-items: center;
+        }
+        &-author {
+            position: absolute;
+            left: 50px;
+            bottom: 50px;
+            display: flex;
+            &-avatar {
+                width: 50px;
+                height: 50px;
+                overflow: hidden;
+                border-radius: 50%;
+                align-items: center;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+
+                & + * {
+                    margin-left: 16px;
+                }
+            }
+            &-role {
+                color: rgba($white, .6)
+            }
+            &-content {
+                & + * {
+                    margin-left: 52px;
+                }
+            }
+            &-name {
+                font-weight: 600;
+            }
+
+            &-action {
+                .button {
+                    border-radius: 16px;
+                    padding: 17px 60px;
+                }
+            }
         }
         &-tag {
             font-size: 14px;
