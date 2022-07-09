@@ -4,8 +4,26 @@
            font-size: 58px;
            font-family: $font-family-second;
         }
+
+
+        &--inline {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
         & + * {
             margin-top: 40px;
+        }
+        & + .section__desc {
+            margin-top: 14px;
+        }
+    }
+
+    .section__desc {
+        max-width: 702px;
+        font-size: 18px;
+        & + * {
+            margin-top: 64px;
         }
     }
     & + * {

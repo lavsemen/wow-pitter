@@ -1,0 +1,60 @@
+.form-home {
+    padding: 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FDF4D6;
+    position: relative;
+    overflow: hidden;
+    border-radius: 60px;
+
+    &__bg-image {
+        position: absolute;
+
+        &-first {
+            left: -150px;
+            bottom: -230px;
+        }
+        &-second {
+            right: -100px;
+            bottom: -234px;
+        }
+    }
+    &__title {
+        font-size: 58px;
+        font-family: $font-family-second;
+        line-height: 66px;
+        text-align: center;
+        max-width: 860px;
+        & + * {
+            margin-top: 14px;
+        }
+    }
+
+    &__desc {
+        font-size: 16px;
+        color: rgba($black, .6);
+        text-align: center;
+        & + * {
+            margin-top: 32px;
+        }
+    }
+
+    &__input {
+        background: $white;
+        padding: 10px 10px 10px 32px;
+        display: flex;
+        align-items: center;
+        min-width: 480px;
+        justify-content: space-between;
+        border-radius: 24px;
+        input {
+            border: 0;
+            outline: none;
+            &:focus, &:active {
+                outline: none;
+                border: 0;
+            }
+        }
+    }
+}

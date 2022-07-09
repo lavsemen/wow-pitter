@@ -1,0 +1,45 @@
+.promo-home {
+    &__title {
+        font-size: 58px;
+        line-height: 66px;
+        font-family: $font-family-second;
+        & + * {
+            margin-top: 14px;
+        }
+    }
+    &__desc {
+        & + * {
+            margin-top: 48px;
+        }
+    }
+
+    &__facts {
+        display: flex;
+        align-items: center;
+        gap: 21px;
+    }
+
+    &__fact {
+        padding: 0px 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 19px rgba(183, 183, 183, 0.25);
+        border-radius: 30px;
+        span {
+            color: $main;
+            font-family: $font-family-second;
+            font-size: 58px;
+            margin-right: 10px;
+        }
+    }
+    &__logo {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        svg {
+            width: 435px;
+            height: 362px;
+        }
+    }
+}

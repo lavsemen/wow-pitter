@@ -1,0 +1,24 @@
+<div class="tabs-card">
+    <div class="tabs-card__image">
+        <img src="{{img}}" alt="">
+    </div>
+    <div class="tabs-card__title">
+        {{title}}
+    </div>
+    <div class="tabs-card__desc">
+        {{desc}}
+    </div>
+    <div class="tabs-card__tags">
+        {{#each tags}}
+           <div class="tabs-card__tag-wrapper">
+                <div class="tabs-card__tag">
+                    {{ this }}
+                </div>
+           </div>
+        {{/each}}
+    </div>
+    <div class="tabs-card__price">
+        {{ price }}
+    </div>
+    <a href="{{url}}" class="tabs-card__link"></a>
+</div>

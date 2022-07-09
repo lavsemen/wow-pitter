@@ -1,0 +1,54 @@
+<div class="tab tab--projects">
+    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-popular-btn" data-bs-toggle="pill"
+                data-bs-target="#pills-popular" type="button" role="tab" aria-controls="pills-popular"
+                aria-selected="true">
+            Популярные
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link " id="pills-merrid-btn" data-bs-toggle="pill" data-bs-target="#pills-merrid"
+                type="button" role="tab" aria-controls="pills-sochi" aria-selected="true">
+
+                Конфетно-букетный Петербург
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link " id="pills-weekend-btn" data-bs-toggle="pill" data-bs-target="#pills-weekend"
+                type="button" role="tab" aria-controls="pills-moscow" aria-selected="true">
+                Wow! Выходные
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link " id="pills-culture-btn" data-bs-toggle="pill" data-bs-target="#pills-culture"
+                type="button" role="tab" aria-controls="pills-culture" aria-selected="true">
+                Культурный отдых
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link " id="pills-freedom-btn" data-bs-toggle="pill" data-bs-target="#pills-freedom"
+                type="button" role="tab" aria-controls="pills-freedom" aria-selected="true">
+                Для самостоятельных
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-popular" role="tabpanel"
+            aria-labelledby="pills-allprojects-tab">
+            {{>items-list/tabs/home/home items-list.tabs.home}}
+        </div>
+        <div class="tab-pane fade " id="pills-merrid" role="tabpanel" aria-labelledby="pills-merrid-tab">
+            {{>items-list/tabs/home/home items-list.tabs.home}}
+        </div>
+        <div class="tab-pane fade " id="pills-weekend" role="tabpanel" aria-labelledby="pills-weekend-tab">
+            {{>items-list/tabs/home/home items-list.tabs.home}}
+        </div>
+        <div class="tab-pane fade " id="pills-culture" role="tabpanel" aria-labelledby="pills-culture-tab">
+            {{>items-list/tabs/home/home items-list.tabs.home}}
+        </div>
+        <div class="tab-pane fade " id="pills-freedom" role="tabpanel" aria-labelledby="pills-freedom-tab">
+            {{>items-list/tabs/home/home items-list.tabs.home}}
+        </div>
+    </div>
+</div>

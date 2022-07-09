@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 'auto',
         spaceBetween: 155,
         grabCursor: true,
+        speed: 800,
         navigation: {
             nextEl: '.hero .swiper-button-next',
             prevEl: '.hero .swiper-button-prev'

@@ -1,16 +1,52 @@
 {{>page/templates/top }}
-   <section class="section">
-        <div class="container">
-            {{> hero/hero hero.defaults }}
-        </div>
-   </section>
-   <div class="section">
+<section class="section">
+    <div class="container">{{> hero/hero hero.defaults }}</div>
+</section>
+<section class="section">
     <div class="container">
         <div class="section__header">
-            <div class="section__header-title">
-                Ваш лучший план на выходные!
-            </div>
+            <div class="section__header-title">Ваш лучший план на выходные!</div>
         </div>
+        <div class="section__body">{{> tabs/home/tabs }}</div>
     </div>
-   </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="section__header section__header--inline">
+            <div class="section__header-title">Блог интересных событий</div>
+            {{> uikit/buttons/markup text="Смотреть всё"}}
+        </div>
+        <div class="section__body">{{>slider/events/events slider.events}}</div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">{{>promo/home/promo }}</div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="section__header section__header--inline">
+            <div class="section__header-title">Люди, влюбляющие в Петербург</div>
+            {{>uikit/buttons/markup text='Вся команда'}}
+        </div>
+        <div class="section__desc">
+            Наши экскурсоводы любят Петербург, как Бродский любил Ваську, как Петр любил свое болото, как
+            Ахматова любила решетку Летнего сада. Они покажут Вам город так, как не расскажут ни в одном
+            путеводителе. Мы уверены, Вы не останетесь равнодушными!
+        </div>
+        <div class="section__body">{{> items-list/team/team items-list.team.home}}</div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="section__header">
+            <div class="section__header-title">Отзывы наших клиентов</div>
+        </div>
+        <div class="section__body">{{>slider/reviews/reviews slider.reviews}}</div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        {{> form/home/form}}
+    </div>
+</section>
 {{>page/templates/bottom}}
