@@ -6,13 +6,25 @@
     }
 
     &__item {
+        @include respond-to(xl) {
+            font-size: 14px
+        };
+        @include respond-to(lg) {
+            font-size: 10px
+        };
         & + * {
             margin-left: 60px;
+            @include respond-to(xl) {
+                margin-left: 40px;
+            };
+            @include respond-to(lg) {
+                margin-left: 36px;
+            };
         }
     }
 
     &__link {
-        
+
     }
 
 }

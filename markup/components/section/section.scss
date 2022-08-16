@@ -3,6 +3,22 @@
         &-title {
            font-size: 58px;
            font-family: $font-family-second;
+
+           @include respond-to(xl) {
+            font-size: 45px;
+            line-height: 51px;
+
+           };
+
+           @include respond-to(lg) {
+            font-size: 35px;
+            line-height: 40px;
+           };
+
+           @include respond-to(md) {
+            font-size: 27px;
+            line-height: 31px;
+           };
         }
 
 

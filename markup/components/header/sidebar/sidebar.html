@@ -1,0 +1,9 @@
+<div class="header-sidebar__list">
+    <nav class="header-sidebar__nav">
+        {{#each this}}
+            <div class="header-sidebar__item">
+                {{> uikit/links/markup text=name url=url}}
+            </div>
+        {{/each}}
+    </nav>
+</div>

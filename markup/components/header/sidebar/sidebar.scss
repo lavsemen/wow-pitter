@@ -1,0 +1,45 @@
+.header-sidebar {
+    position: fixed;
+    background: $white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 140px;
+    transition: .4s ease-in-out;
+    opacity: 0;
+    transform: translateY(-1000px);
+
+    &.active {
+        transform: translateY(0);
+        opacity: 1;
+
+        @include respond-from(md) {
+            opacity: 0;
+            transform: translateY(-1000px);
+        };
+    }
+
+    &__list {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__item {
+        font-size: 20px;
+        & + * {
+            margin-top: 35px;
+        }
+
+        .button {
+            font-size: 17px;
+            line-height: 17px;
+            padding: 15px 43px;
+        }
+    }
+
+}

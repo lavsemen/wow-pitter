@@ -1,5 +1,7 @@
 .header {
     padding: 21px 0;
+    position: relative;
+    z-index: 101;
     border-bottom: 1px solid rgba($black, .10);
     &__wrapper {
         display: flex;
@@ -8,6 +10,49 @@
     }
     &__item {
         height: 100%;
+    }
+
+    &__burger {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+
+      &.active {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        span {
+            position: absolute;
+            top: 50%;
+            left: 0;
+
+            &:nth-child(2) {
+                width: 24px;
+                transform: translateY(-3px) rotate(45deg);
+            }
+            &:first-child {
+                transform: rotate(-45deg);
+            }
+        }
+      }
+      span {
+        transition: .2s ease-out;
+        height: 2px;
+        display: block;
+        border-radius: 16px;
+        background-color: $black;
+
+        &:first-child {
+            width: 24px;
+        }
+
+        &:nth-child(2) {
+            width: 16px;
+            margin-top: 3px;
+        }
+      }
     }
 
 

@@ -4,12 +4,27 @@
         <div class="header__logo">
             {{Icon iconName="logo"}}
         </div>
-        <div class="header__item d-flex align-items-center">
+        <div class="header__item d-md-flex align-items-center d-none">
             {{> header/menu/menu header.menu }}
         </div>
-        <div class="header__item">
+        <div class="header__item d-none d-md-flex">
             {{> uikit/buttons/markup text="Оставить заявку"}}
+        </div>
+        <div class="header__item d-flex d-md-none">
+            <div class="header__burger">
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
  </div>
 </header>
+
+<div class="header-sidebar">
+    <div class="header-sidebar__item">
+        {{>header/sidebar/sidebar header.menu}}
+    </div>
+    <div class="header-sidebar__item">
+        {{> uikit/buttons/markup text="Оставить заявку"}}
+    </div>
+ </div>
