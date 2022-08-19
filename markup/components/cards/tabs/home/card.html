@@ -17,8 +17,11 @@
            </div>
         {{/each}}
     </div>
-    <div class="tabs-card__price">
-        {{ price }}
+    <div class="tabs-card__footer">
+        <div class="tabs-card__price">
+            {{ price }}
+        </div>
+        {{>uikit/buttons/markup text="Забронировать"}}
     </div>
     <a href="{{url}}" class="tabs-card__link"></a>
 </div>

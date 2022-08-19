@@ -70,11 +70,22 @@
     }
 
     &__price {
-        padding-top: 17px;
-        margin-top: auto;
+
         font-size: 24px;
         font-weight: 700;
         line-height: 29px;
+    }
+
+    &__footer {
+        padding-top: 17px;
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .button {
+            padding: 7px 25px;
+        }
     }
 
     &:hover {

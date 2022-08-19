@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
             nextEl: '.slider-events .swiper-button-next',
             prevEl: '.slider-events .swiper-button-prev',
         },
+        speed: 300,
         spaceBetween: 40,
-        speed: 800
     })
 })
